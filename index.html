@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/d6a20dd980.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="index.css">
+	<title>Document</title>
+</head>
+<body>
+	<div class="fragment_206">
+		<nav class="navbar navbar-expand-lg bg-body-tertiary nav-green">
+			<div class="container-fluid">
+				<div class="navbar-nav">
+				  	<a class="nav-link" href="/perguntas-frequentes">Perguntas frequentes</a>
+				  	<a class="nav-link" href="/privacidade-e-proteção-de-dados">Privacidade e proteção de dados</a>
+			  	</div>
+			</div>
+		</nav>
+		<nav class="navbar navbar-expand-lg bg-body-tertiary nav-white shadow">
+			<div class="container-fluid">
+			  <a class="navbar-brand" href="/home">
+				<lfr-editable id="01-logo" type="image">
+					<img style="margin-left: 30px; width: 100%;" alt="Logo Image" class="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAnSURBVHgB7cwxEQAACAOxgn8fHB7wBiK6MHwEJKpnZUiZCAgIvgQHmksDKxJ1SeoAAAAASUVORK5CYII=" />
+				</lfr-editable>
+			  </a>
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+				<ul class="navbar-nav">
+				  <li class="nav-item">
+					<a class="nav-link" href="/busca">
+						<i class="fa-solid fa-magnifying-glass"></i>					
+					</a>
+				  </li>
+				  <li class="nav-item dropdown">
+					<a class="nav-link" onclick="changeColorLink(this, 'imgEst')" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						estatísticas <i id="imgEst" class="fa-solid fa-angle-down"></i>
+					</a>
+					<ul class="dropdown-menu estatistica">
+						<li><a class="dropdown-item" href="/resultado">PESQUISA POR TEMA</a></li>
+						<li><a class="dropdown-item" href="/resultado-arvore">PESQUISA EM ÁRVORE</a></li>
+						<li><a class="dropdown-item" href="/resultado-livre">PESQUISA LIVRE</a></li>
+					  </ul>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#">relatórios</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="/pedidos">pedidos</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="/indicadores">Indicadores</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link active" href="/ajuda">ajuda</a>
+				  </li>
+				  <li class="nav-item dropdown">
+					<a class="nav-link" href="#" role="button" onclick="changeColorLink(this, 'imgLang')" data-bs-toggle="dropdown" aria-expanded="false">
+					  PT <i id="imgLang" class="fa-solid fa-angle-down"></i>
+					</a>
+					<ul class="dropdown-menu lang">
+					  <li><a class="dropdown-item " href="#">EN</a></li>
+					</ul>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link reservada" href="/login-page">
+						<i class="fa-regular fa-user"></i>  Área reservada
+					</a>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+		</nav>
+		<div class="content">
+			<!-- Button trigger modal -->
+			<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+				Launch demo modal
+			</button> -->
+			
+			<div class="row">
+				<div class="col">
+					<div class="route">
+						<p></p>
+					</div>
+				</div>
+				<div class="col">
+				</div>
+			</div>
+			<!-- Modal -->
+			<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h1 class="modal-title fs-5" id="exampleModalLabel">Pesquisa por tema</h1>
+					</div>
+					<div class="modal-body">
+						<form action="">
+							<label for="">Tema</label>
+							<div class="input-group">
+								<select name="" id="" class="form-control">
+									<option value="">Selecione</option>
+								</select>
+								<span class="input-group-text"><i class="fa-solid fa-angle-down"></i></span>
+							</div>
+							
+							<label for="">Subtema</label>
+							<div class="input-group">
+								<select name="" id="" class="form-control">
+									<option value="">Selecione</option>
+								</select>
+								<span class="input-group-text"><i class="fa-solid fa-angle-down"></i></span>
+							</div>
+							<label for="">Dimensões</label>
+							<div class="input-group">
+								<select name="" id="" class="form-control">
+									<option value="">Selecione</option>
+								</select>
+								<span class="input-group-text"><i class="fa-solid fa-angle-down"></i></span>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer-custom">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">SAIR</button>
+						<button type="button" class="btn btn-primary" data-bs-dismiss="modal">PESQUISAR</button>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+		<nav class="navbar navbar-expand-lg bg-body-tertiary footer shadow">
+			<div class="container-fluid">
+			  <a class="navbar-brand" href="#">
+				<lfr-editable id="02-logo-footer" type="image">
+					<img style="margin-left: 30px; width: 100%;" alt="Logo Image" class="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAnSURBVHgB7cwxEQAACAOxgn8fHB7wBiK6MHwEJKpnZUiZCAgIvgQHmksDKxJ1SeoAAAAASUVORK5CYII=" />
+				</lfr-editable>
+			  </a>
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+				<ul class="navbar-nav">
+				  <li class="nav-item">
+					<a class="nav-link" href="/links">Links</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="/contatos">Contactos</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#">Mapa do site</a>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+		</nav>
+	</div>
+	<script type="text/javascript">
+		function changeGrid(index){
+			if(index == "seguros"){
+				document.getElementById('seguros').style.display = 'block';
+				document.getElementById('segurosh2').style.display = 'block';
+				document.getElementById('fPensoes').style.display = 'none';
+				document.getElementById('fPensoesh2').style.display = 'none';
+				document.getElementById('mediacao').style.display = 'none';
+				document.getElementById('mediacaoh2').style.display = 'none';
+			}
+			if(index == "fPensoes"){
+				document.getElementById('seguros').style.display = 'none';
+				document.getElementById('segurosh2').style.display = 'none';
+				document.getElementById('fPensoes').style.display = 'block';
+				document.getElementById('fPensoesh2').style.display = 'block';
+				document.getElementById('mediacao').style.display = 'none';
+				document.getElementById('mediacaoh2').style.display = 'none';
+			}else if(index == "mediacao"){
+				document.getElementById('seguros').style.display = 'none';
+				document.getElementById('segurosh2').style.display = 'none';
+				document.getElementById('fPensoes').style.display = 'none';
+				document.getElementById('fPensoesh2').style.display = 'none';
+				document.getElementById('mediacao').style.display = 'block';
+				document.getElementById('mediacaoh2').style.display = 'block';
+			}
+		}
+		function toInfoIndicador(){
+			window.location.href = '/informação-indicador';
+		}
+		function toInfoCalendario(){
+			windoe.location.href = '/informação-calendario';
+		}
+		function toCalendarioVerMais(){
+			window.location.href = '/ver-mais';
+		}
+		function navegateTo(index){
+			window.location.href = index;
+		}
+		function changeColorLink(link, img){
+			console.log(link.style.color);
+			if(link.style.color != "rgb(0, 141, 162)"){
+				link.style.color = "#008DA2";
+				document.getElementById(img).classList.remove('fa-angle-down');
+				document.getElementById(img).classList.add('fa-angle-up');
+			}else{
+				link.style.color = "#005B6C";
+				document.getElementById(img).classList.remove('fa-angle-up');
+				document.getElementById(img).classList.add('fa-angle-down');
+			}
+		}
+		window.onload = function () {
+			var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
+			myModal.show();
+		}
+
+	</script>
+</body>
+</html>
